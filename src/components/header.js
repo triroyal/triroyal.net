@@ -5,9 +5,11 @@ import HeaderImage from "@components/image"
 
 const Header = () => (
   <header>
-    <Link to="/">
-      <HeaderImage />
-    </Link>
+    <div className="container centered">
+      <Link to="/">
+        <HeaderImage />
+      </Link>
+    </div>
   </header>
 )
 

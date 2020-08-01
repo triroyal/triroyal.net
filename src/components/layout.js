@@ -8,19 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Header from "./header"
+import Header from "@components/header"
+import Footer from "@components/footer"
 
 const Layout = ({ children }) => (
   <>
     <Header />
     <div>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
     </div>
+    <Footer />
   </>
 )
 
