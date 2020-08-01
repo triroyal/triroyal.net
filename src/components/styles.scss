@@ -12,8 +12,8 @@ $primary: $green;
 @import "~bulma/bulma.sass";
 
 // Handcrafted CSS
-.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
