@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `PT. TRIROYAL TIMURRAYA`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Palm Oil Mill Contractor | Water Treatment`,
     author: `@zegheim`,
   },
   plugins: [
