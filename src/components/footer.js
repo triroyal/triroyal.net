@@ -9,9 +9,12 @@ const Footer = () => (
   <footer className="footer has-background-primary">
     <div className="content has-text-centered has-text-white">
       <p className="mb-2">{address}</p>
-      <p className="mb-2">Mobile: {mobileNums.join(" | ")} </p>
       <p className="mb-2">
-        E-mail:{" "}
+        <strong className="has-text-white">Mobile:</strong>{" "}
+        {mobileNums.join(" | ")}{" "}
+      </p>
+      <p className="mb-2">
+        <strong className="has-text-white">Email:</strong>{" "}
         {emailAddrs
           .map(e => (
             <a className="has-text-info" href={`mailto:${e}`}>
