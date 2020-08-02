@@ -55,5 +55,10 @@ footer {
   .centered {
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .centered.vertical {
+    flex-direction: column;
   }
 }

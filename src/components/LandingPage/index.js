@@ -2,7 +2,7 @@ import React from "react"
 import landing from "@images/about.png"
 
 const LandingPage = () => (
-  <div className="container px-6 pt-4 pb-6">
+  <div className="container px-5 pb-5">
     <div className="has-text-centered pb-4">
       <img
         src={landing}
