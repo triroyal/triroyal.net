@@ -19,9 +19,11 @@ const Layout = ({ children }) => (
     <Helmet>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Helmet>
-    <Header />
-    <main>{children}</main>
-    <Footer />
+    <div id="app-wrapper">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
   </>
 )
 

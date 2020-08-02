@@ -17,7 +17,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false)
 
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar pt-4" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a
           onClick={() => setIsActive(!isActive)}
@@ -62,8 +62,8 @@ const Header = () => {
         <Link to="/">
           <img src={header} className="responsive" alt="Company logo." />
         </Link>
+        <Navbar />
       </div>
-      <Navbar />
     </header>
   )
 }
