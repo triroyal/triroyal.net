@@ -13,9 +13,11 @@ $primary: $green;
 $text: $grey-dark;
 
 // Update some of Bulma's component variables
-$navbar-item-hover-color: $green;
+$card-header-background-color: $text;
+$card-header-color: $white;
+$navbar-item-hover-color: $primary;
 $navbar-tab-active-color: $navbar-item-hover-color;
-$navbar-tab-hover-border-bottom-color: $green;
+$navbar-tab-hover-border-bottom-color: $primary;
 $navbar-tab-active-border-bottom-color: $navbar-tab-hover-border-bottom-color;
 $navbar-tab-active-border-bottom-width: 1px;
 
@@ -42,13 +44,16 @@ footer {
   height: auto;
 }
 
-.justify {
-  text-align: justify;
+.full-height {
+  height: 100%;
 }
 
-.navbar-burger.is-active {
-  color: $primary;
-  background-color: $white;
+.full-width {
+  width: 100%;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .centered {
@@ -59,6 +64,11 @@ footer {
 
 .centered.vertical {
   flex-direction: column;
+}
+
+.navbar-burger.is-active {
+  color: $primary;
+  background-color: $white;
 }
 
 @media (min-width: $navbar-breakpoint) {
