@@ -6,7 +6,7 @@ import SEO from "@components/seo"
 
 import "@components/styles.scss"
 
-const IndexPage = () => (
+const Landing = () => (
   <>
     <SEO title="Home" />
     <Layout>
@@ -15,4 +15,4 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage
+export default Landing

@@ -1,18 +1,18 @@
 import React from "react"
 
-import GalleryPage from "@components/GalleryPage"
+import ServicesPage from "@components/ServicesPage"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
 
 import "@components/styles.scss"
 
-const Gallery = () => (
+const Services = () => (
   <>
     <SEO title="Home" />
     <Layout>
-      <GalleryPage />
+      <ServicesPage />
     </Layout>
   </>
 )
 
-export default Gallery
+export default Services
