@@ -5,6 +5,9 @@ $green: #006838;
 $white: #ffffff;
 $grey-dark: #4d4d4d;
 
+// More global variables
+$img-size: 1200px;
+
 // Update Bulma's global variables
 $primary: $green;
 $text: $grey-dark;
@@ -22,6 +25,15 @@ $navbar-tab-active-border-bottom-width: 1px;
 .responsive {
   max-width: 100%;
   height: auto;
+}
+
+.align-image {
+  max-width: $img-size;
+  height: auto;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .navbar-burger.is-active {
