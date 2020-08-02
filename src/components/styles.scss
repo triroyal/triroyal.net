@@ -2,20 +2,25 @@
 
 // Set your brand colors
 $green: #006838;
+$white: #ffffff;
+$black: #4d4d4d;
 
 // Update Bulma's global variables
 $primary: $green;
+$text: $black;
 
 // Update some of Bulma's component variables
-
-// Update Bulma
 @import "~bulma/bulma.sass";
 
 // Handcrafted CSS
-
 .responsive {
   max-width: 100%;
   height: auto;
+}
+
+.navbar-burger.is-active {
+  color: $primary;
+  background-color: $white;
 }
 
 @media (min-width: $navbar-breakpoint) {
