@@ -14,16 +14,16 @@ const pageNames = {
 }
 
 const Navbar = props => {
-  const [isToggled, setIsToggled] = React.useState(false)
+  const [isActive, setIsActive] = React.useState(false)
 
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a
-          onClick={() => setIsToggled(!isToggled)}
+          onClick={() => setIsActive(!isActive)}
           role="button"
           className={`navbar-burger burger ${
-            isToggled ? "is-active" : "has-text-white has-background-primary"
+            isActive ? "is-active" : "has-text-white has-background-primary"
           }`}
           aria-label="menu"
           aria-expanded="false"
@@ -36,12 +36,16 @@ const Navbar = props => {
       </div>
       <div
         id="navbarMenu"
-        className={`navbar-menu ${isToggled ? "is-active" : ""} centered`}
+        className={`navbar-menu ${isActive ? "is-active" : ""} centered`}
       >
         {/* center navbar on desktop mode */}
         <div className="navbar-start" style={{ "margin-right": "unset" }}>
           {Object.keys(pageNames).map(name => (
-            <Link to={pageNames[name]} className="navbar-item is-tab">
+            <Link
+              to={pageNames[name]}
+              className="navbar-item is-tab"
+              activeClassName="is-active"
+            >
               {name}
             </Link>
           ))}

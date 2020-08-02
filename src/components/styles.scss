@@ -11,7 +11,10 @@ $text: $grey-dark;
 
 // Update some of Bulma's component variables
 $navbar-item-hover-color: $green;
+$navbar-tab-active-color: $navbar-item-hover-color;
 $navbar-tab-hover-border-bottom-color: $green;
+$navbar-tab-active-border-bottom-color: $navbar-tab-hover-border-bottom-color;
+$navbar-tab-active-border-bottom-width: 1px;
 
 @import "~bulma/bulma.sass";
 
