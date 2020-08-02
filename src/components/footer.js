@@ -16,7 +16,7 @@ const Footer = () => (
       <p className="mb-2">
         <strong className="has-text-white">Email:</strong>{" "}
         {emailAddrs
-          .map(e => (
+          .map((e) => (
             <a className="has-text-info" href={`mailto:${e}`}>
               {e}
             </a>

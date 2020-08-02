@@ -40,7 +40,7 @@ const Navbar = () => {
       >
         {/* center navbar on desktop mode */}
         <div className="navbar-start" style={{ "margin-right": "unset" }}>
-          {Object.keys(pageNames).map(name => (
+          {Object.keys(pageNames).map((name) => (
             <Link
               to={pageNames[name]}
               className="navbar-item is-tab"
