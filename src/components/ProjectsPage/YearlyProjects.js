@@ -1,16 +1,16 @@
 import React from "react"
 
 const ProjectCard = ({ client, description, location }) => (
-  <div class="column card is-one-third">
-    <header class="card-header">
-      <p class="card-header-title">{client}</p>
+  <div className="column card is-one-third">
+    <header className="card-header">
+      <p className="card-header-title">{client}</p>
     </header>
-    <div class="card-content">
-      <div class="content">
-        <p>
+    <div className="card-content">
+      <div className="content">
+        <p className="justify">
           <strong>Pekerjaan:</strong> {description}
         </p>
-        <p>
+        <p className="justify">
           <strong>Lokasi:</strong> {location}
         </p>
       </div>
@@ -19,11 +19,12 @@ const ProjectCard = ({ client, description, location }) => (
 )
 
 const YearlyProjects = ({ year, projectsList }) => (
-  <div class="centered vertical pb-5">
-    <h3 class="title is-3">{year}</h3>
-    <div class="columns is-multiline align-image">
+  <div className="centered vertical pb-5">
+    <h3 className="title is-3">{year}</h3>
+    <div className="columns is-multiline align-image">
       {projectsList.map((p) => (
         <ProjectCard
+          key={`${p.client}-${p.description}-${p.location}`}
           client={p.client}
           description={p.description}
           location={p.location}

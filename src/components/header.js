@@ -39,9 +39,10 @@ const Navbar = () => {
         className={`navbar-menu ${isActive ? "is-active" : ""} navbar-centered`}
       >
         {/* center navbar on desktop mode */}
-        <div className="navbar-start" style={{ "margin-right": "unset" }}>
+        <div className="navbar-start" style={{ marginRight: "unset" }}>
           {Object.keys(pageNames).map((name) => (
             <Link
+              key={name}
               to={pageNames[name]}
               className="navbar-item is-tab"
               activeClassName="is-active"
