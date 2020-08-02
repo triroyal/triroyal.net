@@ -13,7 +13,7 @@ const pageNames = {
   "hubungi kami": "/contact",
 }
 
-const Navbar = props => {
+const Navbar = () => {
   const [isActive, setIsActive] = React.useState(false)
 
   return (
