@@ -1,18 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
+import LandingPage from "@components/LandingPage"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
 
 import "@components/styles.scss"
 
-const LandingPage = () => (
-  <Layout>
+const IndexPage = () => (
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-  </Layout>
+    <Layout>
+      <LandingPage />
+    </Layout>
+  </>
 )
 
-export default LandingPage
+export default IndexPage
