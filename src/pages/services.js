@@ -8,7 +8,7 @@ import "@components/styles.scss"
 
 const Services = () => (
   <>
-    <SEO title="Home" />
+    <SEO title="Services" />
     <Layout>
       <ServicesPage />
     </Layout>

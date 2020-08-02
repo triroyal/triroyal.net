@@ -8,7 +8,7 @@ import "@components/styles.scss"
 
 const Gallery = () => (
   <>
-    <SEO title="Home" />
+    <SEO title="Gallery" />
     <Layout>
       <GalleryPage />
     </Layout>
