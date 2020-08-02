@@ -51,14 +51,20 @@ footer {
   background-color: $white;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered.vertical {
+  flex-direction: column;
+}
+
 @media (min-width: $navbar-breakpoint) {
-  .centered {
+  .navbar-centered {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .centered.vertical {
-    flex-direction: column;
   }
 }

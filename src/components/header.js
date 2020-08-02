@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
       <div
         id="navbarMenu"
-        className={`navbar-menu ${isActive ? "is-active" : ""} centered`}
+        className={`navbar-menu ${isActive ? "is-active" : ""} navbar-centered`}
       >
         {/* center navbar on desktop mode */}
         <div className="navbar-start" style={{ "margin-right": "unset" }}>
