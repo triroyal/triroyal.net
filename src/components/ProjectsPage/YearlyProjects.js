@@ -21,9 +21,9 @@ const ProjectCard = ({ client, description, location }) => (
 )
 
 const YearlyProjects = ({ year, projectsList }) => (
-  <div className="centered vertical pb-5">
+  <div className="pb-5 align-image full-width">
     <h3 className="title is-3">{year}</h3>
-    <div className="columns is-multiline align-image full-width">
+    <div className="columns is-multiline">
       {projectsList.map((p) => (
         <ProjectCard
           key={`${p.client}-${p.description}-${p.location}`}

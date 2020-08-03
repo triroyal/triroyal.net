@@ -2,7 +2,7 @@ import React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import projects from "@images/projects.png"
+import Projects from "@images/projects.png"
 import YearlyProjects from "./YearlyProjects"
 
 const getUniqueYears = (projects) =>
@@ -43,10 +43,10 @@ const ProjectsPage = () => {
   const reverseChronologicalYears = getUniqueYears(data.projectsCsv.items)
 
   return (
-    <div className="container px-5 pb-5">
-      <div className="has-text-centered pb-4">
+    <div className="container centered vertical px-5 pb-5">
+      <div className="pb-4">
         <img
-          src={projects}
+          src={Projects}
           className="responsive"
           alt="Triroyal engineering team."
         />
