@@ -13,7 +13,7 @@ $primary: $green;
 $text: $grey-dark;
 
 // Update some of Bulma's component variables
-$card-header-background-color: $grey-dark;
+$card-header-background-color: $green;
 $card-header-color: $white;
 $navbar-item-hover-color: $primary;
 $navbar-tab-active-color: $navbar-item-hover-color;
@@ -26,6 +26,10 @@ $navbar-tab-active-border-bottom-width: 1px;
 // Handcrafted CSS
 footer {
   margin-top: auto;
+}
+
+a[href^="mailto"] {
+  text-decoration: underline;
 }
 
 #app-wrapper {
@@ -64,6 +68,16 @@ footer {
 
 .centered.vertical {
   flex-direction: column;
+}
+
+.card.full-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-footer-item {
+  justify-content: flex-start;
 }
 
 .navbar-burger.is-active {

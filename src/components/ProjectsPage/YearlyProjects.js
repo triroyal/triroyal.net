@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 const ProjectCard = ({ client, description, location }) => (
   <div className="column is-one-third">
@@ -6,15 +8,18 @@ const ProjectCard = ({ client, description, location }) => (
       <header className="card-header">
         <p className="card-header-title">{client}</p>
       </header>
-      <div className="card-content">
+      <div className="card-content px-4 full-height">
         <div className="content">
-          <p className="justify">
-            <strong>Pekerjaan:</strong> {description}
-          </p>
-          <p className="justify">
-            <strong>Lokasi:</strong> {location}
-          </p>
+          <p className="justify">{description}</p>
         </div>
+      </div>
+      <div className="card-footer">
+        <span className="card-footer-item">
+          <span className="icon pr-1">
+            <FontAwesomeIcon icon={faMapMarkerAlt} />
+          </span>
+          {location}
+        </span>
       </div>
     </div>
   </div>
