@@ -38,6 +38,17 @@ a[href^="mailto"] {
   flex-direction: column;
 }
 
+#search-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet) {
+  #search-wrapper {
+    justify-content: flex-end;
+  }
+}
+
 .responsive {
   max-width: 100%;
   height: auto;
