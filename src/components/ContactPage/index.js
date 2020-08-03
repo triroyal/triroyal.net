@@ -1,10 +1,15 @@
 import React from "react"
+import ContactForm from "./ContactForm"
+import Contact from "@images/contact.png"
 
 const ContactPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+  <div className="container centered vertical px-5 pb-5">
+    <div className="has-text-centered pb-4">
+      <img src={Contact} className="responsive" alt="Triroyal team." />
+    </div>
+    <div className="align-image full-width">
+      <ContactForm />
+    </div>
   </div>
 )
 
