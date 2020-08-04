@@ -19,7 +19,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    fetch("/contact", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
@@ -44,7 +44,7 @@ const ContactForm = () => {
       method="post"
       data-netlify="true"
       // data-netlify-honeypot="botfield"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
       onSubmit={handleSubmit}
     >
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -100,7 +100,7 @@ const ContactForm = () => {
           onChange={handleChange}
         />
       </div>
-      <div data-netlify-recaptcha="true"></div>
+      {/* <div data-netlify-recaptcha="true"></div> */}
       <div class="field">
         <button class="button is-primary" type="submit">
           Kirim
