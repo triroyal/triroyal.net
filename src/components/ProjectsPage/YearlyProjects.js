@@ -4,7 +4,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 const ProjectCard = ({ client, description, location }) => (
   <div className="column is-one-third">
-    <div className="card full-height">
+    <div className="card full-height rounded">
       <header className="card-header">
         <p className="card-header-title">{client}</p>
       </header>
