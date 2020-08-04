@@ -69,6 +69,7 @@ const ContactForm = () => {
         <label className="label" htmlFor="name">
           Nama
           <input
+            required
             className="full-width"
             type="text"
             id="name"
@@ -82,6 +83,7 @@ const ContactForm = () => {
         <label className="label" htmlFor="email">
           E-mail
           <input
+            required
             type="email"
             id="email"
             name="email"
@@ -95,6 +97,7 @@ const ContactForm = () => {
         <label className="label" htmlFor="message">
           Pesan
           <textarea
+            required
             className="textarea full-width"
             id="message"
             name="message"
