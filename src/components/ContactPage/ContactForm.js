@@ -11,12 +11,14 @@ const ContactForm = () => {
     email: "",
     message: "",
   })
+  const [isLoading, setIsLoading] = React.useState("")
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
+    setIsLoading("is-loading")
     e.preventDefault()
     const form = e.target
     fetch("/", {
@@ -36,6 +38,7 @@ const ContactForm = () => {
         alert("Pesan telah dikirim!")
       })
       .catch((err) => alert(err))
+      .finally(setIsLoading(""))
   }
 
   return (
@@ -102,7 +105,7 @@ const ContactForm = () => {
       </div>
       {/* <div data-netlify-recaptcha="true"></div> */}
       <div class="field">
-        <button class="button is-primary" type="submit">
+        <button class={`button is-primary ${isLoading}`} type="submit">
           Kirim
         </button>
       </div>
