@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 
 const encode = (data) =>
   Object.keys(data)
@@ -109,7 +111,10 @@ const ContactForm = () => {
       {/* <div data-netlify-recaptcha="true"></div> */}
       <div class="field">
         <button class={`button is-primary ${isLoading}`} type="submit">
-          Kirim
+          <span class="icon">
+            <FontAwesomeIcon icon={faPaperPlane} />
+          </span>
+          <span>Kirim</span>
         </button>
       </div>
     </form>
