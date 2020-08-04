@@ -28,8 +28,11 @@ const ProjectCard = ({ client, description, location }) => (
 const YearlyProjects = ({ year, projectsList }) => (
   <div className="pb-5 align-image full-width">
     <h3 id={year} className="title is-3">
-      {year}
+      <a className="has-text-grey-dark" href={`#${year}`}>
+        {year}
+      </a>
     </h3>
+
     <div className="columns is-multiline">
       {projectsList.map((p) => (
         <ProjectCard
