@@ -43,13 +43,13 @@ const ContactForm = () => {
       name="contact"
       method="post"
       data-netlify="true"
-      data-netlify-honeypot="botfield"
+      // data-netlify-honeypot="botfield"
       data-netlify-recaptcha="true"
       onSubmit={handleSubmit}
     >
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type="hidden" name="form-name" value="contact" />
-      <div className="field" hidden>
+      {/* <div className="field" hidden>
         <label className="label" htmlFor="botfield">
           Don’t fill this out:
         </label>
@@ -61,7 +61,7 @@ const ContactForm = () => {
             onChange={handleChange}
           />
         </div>
-      </div>
+      </div> */}
       <div className="field">
         <label className="label" htmlFor="name">
           Nama
