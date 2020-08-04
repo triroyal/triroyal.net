@@ -38,7 +38,7 @@ const ContactForm = () => {
         alert("Pesan telah dikirim!")
       })
       .catch((err) => alert(err))
-      .finally(setIsLoading(""))
+      .finally(setTimeout(() => setIsLoading(""), 1000))
   }
 
   return (
@@ -55,53 +55,53 @@ const ContactForm = () => {
       <div className="field" hidden>
         <label className="label" htmlFor="botfield">
           Don’t fill this out:
+          <div className="control">
+            <input
+              id="botfield"
+              name="botfield"
+              value={formState.botfield ? formState.botfield : ""}
+              onChange={handleChange}
+            />
+          </div>
         </label>
-        <div className="control">
-          <input
-            id="botfield"
-            name="botfield"
-            value={formState.botfield ? formState.botfield : ""}
-            onChange={handleChange}
-          />
-        </div>
       </div>
       <div className="field">
         <label className="label" htmlFor="name">
           Nama
+          <input
+            className="full-width"
+            type="text"
+            id="name"
+            name="name"
+            value={formState.name}
+            onChange={handleChange}
+          />
         </label>
-        <input
-          className="full-width"
-          type="text"
-          id="name"
-          name="name"
-          value={formState.name}
-          onChange={handleChange}
-        />
       </div>
       <div className="field">
         <label className="label" htmlFor="email">
           E-mail
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="full-width"
+            value={formState.email}
+            onChange={handleChange}
+          />
         </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="full-width"
-          value={formState.email}
-          onChange={handleChange}
-        />
       </div>
       <div className="field">
         <label className="label" htmlFor="message">
           Pesan
+          <textarea
+            className="textarea full-width"
+            id="message"
+            name="message"
+            value={formState.message}
+            onChange={handleChange}
+          />
         </label>
-        <textarea
-          className="textarea full-width"
-          id="message"
-          name="message"
-          value={formState.message}
-          onChange={handleChange}
-        />
       </div>
       {/* <div data-netlify-recaptcha="true"></div> */}
       <div class="field">
