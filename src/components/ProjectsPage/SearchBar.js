@@ -5,7 +5,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 const SearchBar = ({ searchText, handleChange }) => (
   <div id="search-wrapper" className="full-width align-image pb-4">
     <div className="field">
-      <div class="control has-icons-left">
+      <div className="control has-icons-left">
         <input
           className="input"
           type="text"
