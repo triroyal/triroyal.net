@@ -40,7 +40,6 @@ const ContactForm = () => {
 
   return (
     <form
-      className="align-image full-width"
       name="contact"
       method="post"
       data-netlify="true"
