@@ -19,10 +19,9 @@ const Navbar = () => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a
+        <button
           onClick={() => setIsActive(!isActive)}
-          role="button"
-          className={`navbar-burger burger ${
+          className={`button is-text navbar-burger burger ${
             isActive ? "is-active" : "has-text-white has-background-primary"
           }`}
           aria-label="menu"
@@ -32,7 +31,7 @@ const Navbar = () => {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </button>
       </div>
       <div
         id="navbarMenu"

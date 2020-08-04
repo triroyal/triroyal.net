@@ -25,11 +25,7 @@ const Footer = () => (
       <FooterLine icon={faPhoneAlt} content={mobileNums.join(" | ")} />
       <FooterLine
         icon={faEnvelope}
-        content={
-          <a className="has-text-warning" href={`mailto:${emailAddr}`}>
-            {emailAddr}
-          </a>
-        }
+        content={<a href={`mailto:${emailAddr}`}>{emailAddr}</a>}
       />
       <FooterLine icon={faCopyright} content={copyright} />
     </div>

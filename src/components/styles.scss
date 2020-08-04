@@ -30,6 +30,7 @@ footer {
 
 a[href^="mailto"] {
   text-decoration: underline;
+  color: $primary-invert;
 }
 
 #app-wrapper {
