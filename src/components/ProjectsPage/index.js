@@ -1,8 +1,8 @@
 import React from "react"
-
 import { useStaticQuery, graphql } from "gatsby"
 
-import Projects from "@images/projects.png"
+import CloudinaryImage from "@components/shared/CloudinaryImage"
+
 import SearchBar from "./SearchBar"
 import YearlyProjects from "./YearlyProjects"
 
@@ -59,8 +59,8 @@ const ProjectsPage = () => {
   return (
     <div className="container centered vertical px-5 pb-5">
       <div className="pb-4">
-        <img
-          src={Projects}
+        <CloudinaryImage
+          name="projects"
           className="responsive"
           alt="Triroyal engineering team."
         />

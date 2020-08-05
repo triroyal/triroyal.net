@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const path = require(`path`)
 
 module.exports = {
@@ -9,6 +11,27 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        maxResults: 100,
+        prefix: `triroyal-net/`,
+      },
+    },
+    {
+      resolve: "gatsby-transformer-cloudinary",
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        uploadFolder: "triroyal-net",
+        overwriteExisting: false,
+      },
+    },
     {
       resolve: `gatsby-transformer-csv`,
       options: {
@@ -38,6 +61,7 @@ module.exports = {
           "@pages": "src/pages",
           "@images": "src/images",
           "@data": "src/data",
+          "@hooks": "src/hooks",
         },
         extensions: ["js"],
       },

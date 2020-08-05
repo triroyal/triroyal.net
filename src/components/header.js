@@ -1,8 +1,6 @@
 import { Link } from "gatsby"
-
 import React from "react"
-
-import header from "@images/header.png"
+import CloudinaryImage from "@components/shared/CloudinaryImage"
 
 const pageNames = {
   beranda: "/",
@@ -61,7 +59,11 @@ const Header = () => {
       <div className="container px-5 py-5">
         <div className="has-text-centered">
           <Link to="/">
-            <img src={header} className="responsive pb-4" alt="Company logo." />
+            <CloudinaryImage
+              name="header"
+              className="responsive pb-4"
+              alt="Company logo."
+            />
           </Link>
         </div>
         <Navbar />

@@ -1,11 +1,11 @@
 import React from "react"
-import Landing from "@images/about.png"
+import CloudinaryImage from "@components/shared/CloudinaryImage"
 
 const LandingPage = () => (
   <div className="container centered vertical px-5 pb-5">
     <div className="pb-4">
-      <img
-        src={Landing}
+      <CloudinaryImage
+        name="about"
         className="responsive"
         alt="Triroyal engineering team."
       />
