@@ -1,7 +1,7 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import CloudinaryImage from "@components/shared/CloudinaryImage"
+import { useProjectsData } from "@hooks/useProjectsData"
 
 import SearchBar from "./SearchBar"
 import YearlyProjects from "./YearlyProjects"
@@ -28,32 +28,14 @@ const csvReducer = (map, val) => {
 }
 
 const ProjectsPage = () => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        projectsCsv {
-          items {
-            client
-            description
-            location
-            year
-          }
-        }
-      }
-    `
-  )
-
   const [filter, setFilter] = React.useState("")
 
   const handleChange = (e) => {
     setFilter(e.target.value)
   }
 
-  const filteredProjs = data.projectsCsv.items.filter(
-    doesLocationInclude(filter)
-  )
+  const filteredProjs = useProjectsData().filter(doesLocationInclude(filter))
   const filteredProjsByYear = filteredProjs.reduce(csvReducer, {})
-
   const reverseChronologicalYears = getUniqueYears(filteredProjs)
 
   return (
