@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `triroyal.net`,
+        name: `PT. TRIROYAL TIMURRAYA`,
         short_name: `triroyal`,
         start_url: `/`,
         background_color: `#006838`,
