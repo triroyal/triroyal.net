@@ -1,10 +1,10 @@
 import React from "react"
-import CloudinaryImage from "@components/shared/CloudinaryImage"
+import AppImage from "@components/shared/AppImage"
 
 const AboutPage = () => (
   <div className="container centered vertical px-5 pb-5">
     <div className="pb-4">
-      <CloudinaryImage
+      <AppImage
         name="about"
         className="responsive"
         alt="Triroyal engineering team."

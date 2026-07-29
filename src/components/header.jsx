@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
 import React from "react"
-import CloudinaryImage from "@components/shared/CloudinaryImage"
+import { Link, NavLink } from "react-router-dom"
+import AppImage from "@components/shared/AppImage"
 
 const pageNames = {
   beranda: "/",
@@ -38,14 +38,15 @@ const Navbar = () => {
         {/* center navbar on desktop mode */}
         <div className="navbar-start" style={{ marginRight: "unset" }}>
           {Object.keys(pageNames).map((name) => (
-            <Link
+            <NavLink
               key={name}
               to={pageNames[name]}
-              className="navbar-item is-tab"
-              activeClassName="is-active"
+              className={({ isActive }) =>
+                `navbar-item is-tab ${isActive ? "is-active" : ""}`
+              }
             >
               {name}
-            </Link>
+            </NavLink>
           ))}
         </div>
       </div>
@@ -59,7 +60,7 @@ const Header = () => {
       <div className="container px-5 py-5">
         <div className="has-text-centered">
           <Link to="/">
-            <CloudinaryImage
+            <AppImage
               name="header"
               className="responsive pb-4"
               alt="Company logo."

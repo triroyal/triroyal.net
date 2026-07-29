@@ -1,6 +1,6 @@
 import React from "react"
 
-import CloudinaryImage from "@components/shared/CloudinaryImage"
+import AppImage from "@components/shared/AppImage"
 import { useProjectsData } from "@hooks/useProjectsData"
 
 import SearchBar from "./SearchBar"
@@ -41,7 +41,7 @@ const ProjectsPage = () => {
   return (
     <div className="container centered vertical px-5 pb-5">
       <div className="pb-4">
-        <CloudinaryImage
+        <AppImage
           name="projects"
           className="responsive"
           alt="Triroyal engineering team."
