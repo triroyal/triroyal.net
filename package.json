@@ -2,52 +2,31 @@
   "name": "triroyal-net",
   "private": true,
   "description": "Company website for PT. TRIROYAL TIMURRAYA",
-  "version": "0.1.0",
-  "author": "Justin Arista Kasin <justinarista@gmail.com>",
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,md,scss}\""
+  },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-regular-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "bulma": "^0.9.0",
-    "dotenv": "^8.2.0",
-    "gatsby": "^2.23.12",
-    "gatsby-plugin-alias-imports": "^1.0.5",
-    "gatsby-plugin-manifest": "^2.4.14",
-    "gatsby-plugin-offline": "^3.2.13",
-    "gatsby-plugin-react-helmet": "^3.3.6",
-    "gatsby-plugin-sass": "^2.3.12",
-    "gatsby-source-cloudinary": "^0.1.14",
-    "gatsby-source-filesystem": "^2.3.14",
-    "gatsby-transformer-cloudinary": "^1.0.1",
-    "gatsby-transformer-csv": "^2.3.10",
-    "node-sass": "^4.14.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "bulma": "^0.9.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.26.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/triroyal/triroyal.net"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@rollup/plugin-dsv": "^3.0.4",
+    "@vitejs/plugin-react": "^4.3.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "vite": "^5.4.0"
   }
 }
