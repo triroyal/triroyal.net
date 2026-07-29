@@ -1,0 +1,27 @@
+import React from "react"
+import PropTypes from "prop-types"
+import { Helmet } from "react-helmet-async"
+
+import Header from "@components/header"
+import Footer from "@components/footer"
+
+import "@components/styles.scss"
+
+const Layout = ({ children }) => (
+  <>
+    <Helmet>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Helmet>
+    <div id="app-wrapper">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  </>
+)
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
