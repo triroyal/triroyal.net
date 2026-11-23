@@ -3,11 +3,11 @@ import { Link, NavLink } from "react-router-dom"
 import AppImage from "@components/shared/AppImage"
 
 const pageNames = {
-  Beranda: "/",
-  "Tentang Kami": "/about",
-  Layanan: "/services",
-  "Daftar Proyek": "/projects",
-  "Hubungi Kami": "/contact",
+  beranda: "/",
+  "tentang kami": "/about",
+  layanan: "/services",
+  "daftar proyek": "/projects",
+  "hubungi kami": "/contact",
 }
 
 const Navbar = () => {
