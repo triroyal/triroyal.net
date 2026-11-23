@@ -7,7 +7,7 @@ export const siteMetadata = {
   title: "PT Triroyal Timurraya",
   siteUrl: "https://www.triroyal.net",
   description:
-    "Kontraktor pabrik kelapa sawit (PKS) di Sumatera Utara sejak 1994: pembangunan PKS, sterilizer, water treatment, tangki timbun dan bulking station.",
+    "Kontraktor sipil, mekanikal dan elektrikal Pabrik Kelapa Sawit (PKS) sejak 1994: pembangunan PKS, sterilizer, water treatment, tangki timbun dan bulking station.",
   image: "/og-image.png",
 }
 
