@@ -7,11 +7,11 @@ const AboutPage = () => (
       <AppImage
         name="about"
         className="responsive"
-        alt="Triroyal engineering team."
+        alt="Tim teknik PT Triroyal Timurraya"
       />
     </div>
     <p className="align-image justify pb-4">
-      PT. Triroyal Timurraya merupakan perusahaan swasta nasional yang didirikan
+      PT Triroyal Timurraya merupakan perusahaan swasta nasional yang didirikan
       oleh R.Kasin di Medan, Sumatera Utara pada tahun 1994. Perusahaan ini pada
       awalnya bergerak dalam bidang usaha Heavy Metal Construction dan Water
       Treatment Plant yang kemudian dan terus berkembang sebagai perusahaan
@@ -20,9 +20,9 @@ const AboutPage = () => (
     </p>
     <p className="align-image justify">
       Sesuai dengan visi dan misi perusahaan yang didukung dengan pengalaman,
-      fasilitas dan juga keahlian serta dedikasi sumber daya manusia (SDM), PT.
+      fasilitas dan juga keahlian serta dedikasi sumber daya manusia (SDM), PT
       Triroyal Timurraya selalu berusaha memenuhi standar mutu yang diinginkan
-      klien. Dalam usaha menjaga kebersihan lingkungan, PT. Triroyal Timurraya
+      klien. Dalam usaha menjaga kebersihan lingkungan, PT Triroyal Timurraya
       bekerja sama dengan Aquakimia Sdn. Bhd. Malaysia dalam bidang
       Environmental Protection.
     </p>

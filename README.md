@@ -1,6 +1,6 @@
-# PT. TRIROYAL TIMURRAYA — Website
+# PT Triroyal Timurraya — Website
 
-Official corporate website for **PT. TRIROYAL TIMURRAYA** (Palm Oil Mill Contractor & Water Treatment Plant specialist).
+Official corporate website for **PT Triroyal Timurraya** (Palm Oil Mill Contractor & Water Treatment Plant specialist).
 
 Built with **Vite**, **React 18**, and **Bulma SCSS**, and deployed as a static site with serverless functions on **Cloudflare Pages**.
 

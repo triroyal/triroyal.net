@@ -8,7 +8,10 @@ import "@components/styles.scss"
 
 const Projects = () => (
   <>
-    <SEO title="Projects" />
+    <SEO
+      title="Daftar Proyek"
+      description="Lebih dari 130 proyek pembangunan dan pengembangan pabrik kelapa sawit untuk 95 klien di Sumatera, Kalimantan dan Sarawak sejak 1994."
+    />
     <Layout>
       <ProjectsPage />
     </Layout>

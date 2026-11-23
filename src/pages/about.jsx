@@ -8,7 +8,10 @@ import "@components/styles.scss"
 
 const About = () => (
   <>
-    <SEO title="About" />
+    <SEO
+      title="Tentang Kami"
+      description="Didirikan di Medan pada 1994, PT Triroyal Timurraya adalah kontraktor sipil, mekanikal dan elektrikal untuk pembangunan pabrik kelapa sawit (PKS) di seluruh Indonesia."
+    />
     <Layout>
       <AboutPage />
     </Layout>

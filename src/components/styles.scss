@@ -27,7 +27,8 @@ footer {
   margin-top: auto;
 }
 
-a[href^="mailto"] {
+footer a[href^="mailto"],
+footer a[href^="tel"] {
   text-decoration: underline;
   color: $primary-invert;
 }
@@ -113,4 +114,8 @@ a[href^="mailto"] {
     justify-content: center;
     align-items: center;
   }
+}
+
+a[href^="tel"] {
+  white-space: nowrap;
 }

@@ -3,12 +3,11 @@ import { Link, NavLink } from "react-router-dom"
 import AppImage from "@components/shared/AppImage"
 
 const pageNames = {
-  beranda: "/",
-  "tentang kami": "/about",
-  pekerjaan: "/services",
-  "daftar proyek": "/projects",
-  galeri: "/gallery",
-  "hubungi kami": "/contact",
+  Beranda: "/",
+  "Tentang Kami": "/about",
+  Layanan: "/services",
+  "Daftar Proyek": "/projects",
+  "Hubungi Kami": "/contact",
 }
 
 const Navbar = () => {
@@ -63,7 +62,7 @@ const Header = () => {
             <AppImage
               name="header"
               className="responsive pb-4"
-              alt="Company logo."
+              alt="Logo PT Triroyal Timurraya"
             />
           </Link>
         </div>

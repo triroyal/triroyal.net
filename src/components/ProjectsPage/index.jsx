@@ -44,7 +44,7 @@ const ProjectsPage = () => {
         <AppImage
           name="projects"
           className="responsive"
-          alt="Triroyal engineering team."
+          alt="Tim teknik PT Triroyal Timurraya"
         />
       </div>
       <SearchBar searchText={filter} handleChange={handleChange} />
