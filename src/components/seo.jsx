@@ -7,7 +7,7 @@ export const siteMetadata = {
   title: "PT Triroyal Timurraya",
   siteUrl: "https://www.triroyal.net",
   description:
-    "Pembangunan dan pengembangan Pabrik Kelapa Sawit dari desain hingga serah terima: sipil, mekanikal dan elektrikal. Lebih dari 130 proyek di Sumatera dan Kalimantan.",
+    "32 PKS baru 30–60 TPH dan 25 penambahan kapasitas, seperti 20 ke 60 TPH. Sipil, mekanikal dan elektrikal, sebagian besar di Sumatera dan Kalimantan.",
   image: "/og-image.png",
 }
 

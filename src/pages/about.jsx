@@ -10,7 +10,7 @@ const About = () => (
   <>
     <SEO
       title="Tentang Kami"
-      description="Didirikan di Medan pada 1994, PT Triroyal Timurraya adalah kontraktor sipil, mekanikal dan elektrikal untuk pembangunan pabrik kelapa sawit (PKS) di seluruh Indonesia."
+      description="Didirikan di Medan oleh R. Kasin, awalnya di konstruksi baja berat dan water treatment plant, sekarang kontraktor sipil, mekanikal dan elektrikal untuk pabrik kelapa sawit."
     />
     <Layout>
       <AboutPage />

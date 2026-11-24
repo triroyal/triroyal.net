@@ -9,8 +9,8 @@ import "@components/styles.scss"
 const Services = () => (
   <>
     <SEO
-      title="Layanan Kontraktor PKS"
-      description="Pembangunan pabrik kelapa sawit lengkap, fabrikasi dan instalasi sterilizer (termasuk oblique sterilizer), water treatment, tangki timbun dan bulking station."
+      title="Pembangunan dan Upgrade PKS"
+      description="PKS baru 30–60 TPH, penambahan kapasitas, sterilizer oblique dan vertikal, tangki timbun sampai 50.000 MT, bulking station, kernel crushing plant dan water treatment."
     />
     <Layout>
       <ServicesPage />

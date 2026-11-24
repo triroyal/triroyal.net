@@ -6,7 +6,7 @@ import SEO from "@components/seo"
 
 const Landing = () => (
   <>
-    <SEO title="Kontraktor Pabrik Kelapa Sawit" />
+    <SEO title="Kontraktor Pabrik Kelapa Sawit 30–60 TPH" />
     <Layout>
       <LandingPage />
     </Layout>
