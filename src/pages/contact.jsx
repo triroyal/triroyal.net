@@ -8,7 +8,7 @@ import "@components/styles.scss"
 
 const Contact = () => (
   <>
-    <SEO title="Contact" />
+    <SEO title="Hubungi Kami" />
     <Layout>
       <ContactPage />
     </Layout>
