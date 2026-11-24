@@ -5,9 +5,8 @@ import AppImage from "@components/shared/AppImage"
 const pageNames = {
   beranda: "/",
   "tentang kami": "/about",
-  pekerjaan: "/services",
+  layanan: "/services",
   "daftar proyek": "/projects",
-  galeri: "/gallery",
   "hubungi kami": "/contact",
 }
 

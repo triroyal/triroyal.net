@@ -8,7 +8,10 @@ import "@components/styles.scss"
 
 const Services = () => (
   <>
-    <SEO title="Pekerjaan" />
+    <SEO
+      title="Pembangunan dan Upgrade PKS"
+      description="PKS baru 30–60 TPH, penambahan kapasitas, sterilizer oblique dan vertikal, tangki timbun sampai 50.000 MT, bulking station, kernel crushing plant dan water treatment."
+    />
     <Layout>
       <ServicesPage />
     </Layout>

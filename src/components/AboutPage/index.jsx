@@ -19,12 +19,10 @@ const AboutPage = () => (
       Kelapa Sawit (PKS).
     </p>
     <p className="align-image justify">
-      Sesuai dengan visi dan misi perusahaan yang didukung dengan pengalaman,
-      fasilitas dan juga keahlian serta dedikasi sumber daya manusia (SDM), PT
-      Triroyal Timurraya selalu berusaha memenuhi standar mutu yang diinginkan
-      klien. Dalam usaha menjaga kebersihan lingkungan, PT Triroyal Timurraya
-      bekerja sama dengan Aquakimia Sdn. Bhd. Malaysia dalam bidang
-      Environmental Protection.
+      Sejak tahun 2000 kami sudah mengerjakan 132 proyek untuk 95 klien,
+      dari grup perkebunan besar sampai pabrik mandiri. Untuk pekerjaan
+      pengolahan air dan perlindungan lingkungan, kami bekerja sama dengan
+      Aquakimia Sdn. Bhd. dari Malaysia.
     </p>
   </div>
 )

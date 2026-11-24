@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import AppImage from "@components/shared/AppImage"
 
 const ServicesPage = () => (
@@ -10,27 +11,42 @@ const ServicesPage = () => (
         alt="Tim teknik PT Triroyal Timurraya"
       />
     </div>
-    <p className="align-image justify pb-4">
-      Di PT Triroyal Timurraya, kami melayani berbagai jenis permintaan
-      konstruksi mulai dari fabrikasi dan instalasi rebusan/sterilizer, sistem
-      water treatment, pembangunan tangki timbun, bulking station sampai
-      pembangunan Pabrik Kelapa Sawit (PKS) sepenuhnya. Kami juga menawarkan
-      jasa desain-bangun dengan melibatkan klien dalam prosesnya yang selain
-      diharapkan dapat menyingkat durasi pengerjaan dan penghematan biaya, juga
-      dapat mencapai hasil yang lebih optimal.
-    </p>
-    <p className="align-image justify">
-      Untuk mengimbangi perkembangan industri kelapa sawit di Indonesia yang
-      kian pesat, PT Triroyal Timurraya juga terus memperbarui sistem dan metode
-      pelaksanaan pekerjaan dan selalu terbuka untuk mempelajari tehnik-tehnik
-      baru yang dinilai dapat memberikan hasil yang lebih efektif dengan tetap
-      mempertahankan kualitas terbaik untuk klien. Salah satunya adalah sistem
-      perebusan baru dengan Oblique Sterilizer untuk menggantikan rebusan
-      berbentuk horizontal yang selama ini banyak digunakan di pabrik-pabrik
-      kelapa sawit di Indonesia. Kami bertekad untuk terus mengembangkan layanan
-      kami dengan tujuan agar klien mendapatkan hasil terbaik sesuai dengan yang
-      diinginkan.
-    </p>
+    <div className="align-image content">
+      <p>
+        Kami bisa mengerjakan satu pabrik penuh sebagai desain-bangun, atau
+        hanya bagian sipil, mekanikal atau elektrikalnya saja.
+      </p>
+      <h2 className="is-size-5">PKS baru</h2>
+      <p>
+        32 pabrik berkapasitas 30 sampai 60 TPH, termasuk pabrik yang disiapkan
+        untuk dua tahap seperti 45/60 dan 45/90 TPH.
+      </p>
+      <h2 className="is-size-5">Penambahan kapasitas</h2>
+      <p>
+        25 proyek perluasan pabrik yang sudah berjalan, misalnya dari 20 ke 60
+        TPH, 30 ke 60 TPH dan 45 ke 90 TPH.
+      </p>
+      <h2 className="is-size-5">Sterilizer</h2>
+      <p>
+        30 proyek pembuatan, penggantian dan migrasi sterilizer: oblique,
+        vertikal dan horizontal, termasuk liner, pintu dan sistem kontrol
+        otomatis.
+      </p>
+      <h2 className="is-size-5">Tangki timbun dan bulking station</h2>
+      <p>
+        Tangki CPO dan PKO dari 2.000 sampai 50.000 MT, bulking station, sub
+        bulking station dan kernel bulk silo.
+      </p>
+      <h2 className="is-size-5">Stasiun lain dan utilitas</h2>
+      <p>
+        Kernel crushing plant, water treatment plant dan demin plant, boiler,
+        loading ramp, moving floor, composting dan sipil untuk biogas plant.
+      </p>
+      <p>
+        Daftar lengkapnya, dengan klien dan tahun, ada di{" "}
+        <Link to="/projects">daftar proyek</Link>.
+      </p>
+    </div>
   </div>
 )
 
