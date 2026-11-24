@@ -63,7 +63,7 @@ const Header = () => {
             <AppImage
               name="header"
               className="responsive pb-4"
-              alt="Company logo."
+              alt="Logo PT Triroyal Timurraya"
             />
           </Link>
         </div>
