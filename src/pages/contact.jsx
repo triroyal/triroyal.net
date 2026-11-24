@@ -10,7 +10,7 @@ const Contact = () => (
   <>
     <SEO
       title="Hubungi Kami"
-      description="Kirimkan kapasitas dan lokasi rencana PKS Anda. Kantor kami di Kawasan Industri Modern IV, Deli Serdang, telepon +62 852-7791-8325 atau +62 852-9889-0246."
+      description="Kirimkan kapasitas dan lokasi rencana PKS Anda. Kantor kami di Kawasan Industri Modern IV, Deli Serdang, telepon +62 852-7791-8325 atau +62 831-9889-0246."
     />
     <Layout>
       <ContactPage />
